@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import First from './components/first/first';
+
+const hanldeClick = ()=>{
+  console.log('hello');
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <First name="ali"/>
+     <p>the current time in tehran is {new Date().toLocaleTimeString() }</p>
+     <button onClick={hanldeClick}>click me</button>
+     <input type="checkbox"></input>
     </div>
   );
 }
