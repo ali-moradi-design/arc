@@ -90,9 +90,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   menu: {
-    backgroundColor: theme.palette.common.blue,
+    backgroundColor: "#ebda44",
     color: "white",
-    borderRadius: "0px",
+    borderRadius: "5px",
     zIndex: 1302,
   },
   menuItem: {
@@ -327,7 +327,7 @@ export default function Header(props) {
               transformOrigin: "top left",
             }}
           >
-            <Paper classes={{ root: classes.menu }} elevation={0}>
+            <Paper classes={{ root: classes.menu }} elevation={3}>
               <ClickAwayListener onClickAway={handleClose}>
                 <MenuList
                   onMouseOver={() => setOpenMenu(true)}
