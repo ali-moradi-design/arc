@@ -144,7 +144,7 @@ const useStyles = makeStyles((theme) => ({
   },
   expansionDetails: {
     padding: 0,
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: "#ebda44",
   },
   expansionSummary: {
     padding: "0 24px 0 16px",
