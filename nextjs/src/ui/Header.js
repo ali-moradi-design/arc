@@ -396,7 +396,7 @@ export default function Header(props) {
             route.name === "Services" ? (
               <ExpansionPanel
                 elevation={0}
-                key={route.name}
+                key={`${route.name} ${Math.random()}`}
                 classes={{ root: classes.expansion }}
               >
                 <ExpansionPanelSummary
@@ -425,7 +425,9 @@ export default function Header(props) {
                       <Grid item>
                         <ListItem
                           divider
-                          key={`${route}${route.seleselectedIndex}`}
+                          key={`${route}${
+                            route.seleselectedIndex
+                          }${Math.random()} `}
                           button
                           component={Link}
                           href={route.link}
